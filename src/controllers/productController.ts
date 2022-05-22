@@ -16,7 +16,7 @@ class ProductController {
       const product = await this.service.create(name, amount);
       return res.status(201).json(product);
     } catch (error: unknown) {
-      if (error instanceof Error && error.message.includes('Product already exists')) {
+      if (error instanceof Error) {
         return res.status(403).json({ message: error.message });
       }
       next(error);

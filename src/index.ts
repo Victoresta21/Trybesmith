@@ -1,5 +1,5 @@
 import app from './app';
-// and so it begins
+
 const PORT = 3000;
 
 const server = app.listen(PORT, () => console.log(

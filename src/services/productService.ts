@@ -1,5 +1,5 @@
 import IProduct from '../interfaces/Iproduct';
-import ProductModel from '../models/productModels';
+import ProductModel from '../models/productModel';
 
 class ProductService {
   public model = new ProductModel();
